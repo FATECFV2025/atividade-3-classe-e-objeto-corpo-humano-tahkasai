@@ -4,12 +4,14 @@ public class CorpoHumano {
     private double Massa;
     private double Volume;
     private double Densidade;
+    private double Altura;
 
     // Construtor
-    public CorpoHumano(double massa, double volume, double densidade) {
-        Massa = massa;
-        Volume = volume;
-        Densidade = densidade;
+    public CorpoHumano(double massa, double volume, double densidade, double altura) {
+        this.Massa = massa;
+        this.Volume = volume;
+        this.Densidade = densidade;
+        this.Altura = altura;
     }
 
     // Getter
@@ -21,6 +23,12 @@ public class CorpoHumano {
     }
     public double getDensidade() {
         return Densidade;
+    }
+    public double getAltura() {
+        return Altura;
+    }
+    public double Imc(){
+        return (Massa /(Altura * Altura));
     }
 
     // Setter
@@ -39,10 +47,17 @@ public class CorpoHumano {
         }
     }
     public void setDensidade(double densidade) {
-        if (densidade > 0){
+        if (densidade > 0) {
             Densidade = densidade;
-        } else{
+        } else {
             System.out.println("Densidade inválida");
+        }
+    }
+    public void setAltura(double altura) {
+        if (altura > 0){
+            Altura = altura;
+        } else{
+            System.out.println("Altura inválida");
         }
     }
 }
