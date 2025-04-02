@@ -9,7 +9,7 @@ public class CorpoHumano {
     public CorpoHumano(double massa, double volume, double densidade) {
         Massa = massa;
         Volume = volume;
-        Densidade = volume;
+        Densidade = densidade;
     }
 
     // Getter
@@ -35,7 +35,7 @@ public class CorpoHumano {
         if (volume > 0){
             Volume = volume;
         } else{
-            System.out.println("Volume inválida");
+            System.out.println("Volume inválido");
         }
     }
     public void setDensidade(double densidade) {

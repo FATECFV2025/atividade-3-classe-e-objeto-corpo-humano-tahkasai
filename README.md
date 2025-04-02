@@ -32,9 +32,12 @@
 
 ### Após essa implementação responda:
 
-- Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+- Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu? 
+Iria dar erro, porque o "2" está como string.
 - Na classe Corpo_Humano altere a linha private float Massa para public float Massa; Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+Qualquer pessoa conseguiria alterar a Massa, sem a necessidade de um metodo get ou set.
 - Na classe Corpo_Humano altere a linha public setVolume (float volume) para private setVolume (float volume).Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+Ele não podera mais ser acessado por outras classes, apenas pela classe CorpoHumano.
 
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
