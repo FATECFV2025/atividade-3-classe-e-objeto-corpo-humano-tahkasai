@@ -24,7 +24,7 @@ public class CorpoHumano {
         return Volume;
     }
     public double getDensidade() {
-        return Densidade;
+        return (Massa / Volume);
     }
     public double getAltura() {
         return Altura;
